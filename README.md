@@ -1,3 +1,1 @@
-# cypress1
-# cypress
-# cypress_auto
+# cypress_automation 
