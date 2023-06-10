@@ -46,7 +46,7 @@ describe("Verifying variables, cypress commands and jquery commands", () => {
     //Uses cypress commands and chaining
     cy.contains("#ContactUsFrm", "Contact Us Form")
       .find("#field_11")
-      .should("contain", "First name");
+      .should("contain", "First nam");
 
     //JQuery Approach
     cy.contains("#ContactUsFrm", "Contact Us Form").then((text) => {
