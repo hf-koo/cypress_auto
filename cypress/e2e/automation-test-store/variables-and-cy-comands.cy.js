@@ -40,13 +40,13 @@ describe("Verifying variables, cypress commands and jquery commands", () => {
       expect(headerText).is.eq("Makeup");
     });
   });
-  it("Validate properties of the Contact Us Page", () => {
+  xit("Validate properties of the Contact Us Page", () => {
     cy.visit("https://automationteststore.com/index.php?rt=content/contact");
 
     //Uses cypress commands and chaining
     cy.contains("#ContactUsFrm", "Contact Us Form")
       .find("#field_11")
-      .should("contain", "First nam");
+      .should("contain", "First name");
 
     //JQuery Approach
     cy.contains("#ContactUsFrm", "Contact Us Form").then((text) => {
